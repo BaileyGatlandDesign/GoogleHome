@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Shoelace style sheet (CDN hosted) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.20/dist/shoelace/shoelace.css">
+    
+    <!-- Shoelace script tag (Not meant to be with the bottom script tags) (CDN hosted) -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.20/dist/shoelace/shoelace.esm.js"></script>
+    
+    <!-- Full page JS style sheet (CDN hosted)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+    
+    <!-- Local style sheet for my CSS (Put last to ensure that it overrides any other additional styling. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title in the browsers tab. -->
+    <title>Google Home</title>
+
+    <!-- Linked additional font to be loaded with the page. -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- TOP NAVIGATION BAR --------------------------------------------------------------------------------------------------------- -->
+    <div id="top-bar" style="display: flex; cursor: default;">
+            <!-- Google logo for branding -->
+            <img src="images/googlelogo.png" class="topgoogle" tyle="height: 30px; position: absolute; left: 10px;
+            top: 10px;">
+            <!-- Centre the nav buttons -->
+            <div style="position: absolute; top: 12px; left: 42%;">
+                <!-- Section indicator buttons -->
+                <a class="topbtn tb1" href="#section1"></a>
+                <a class="topbtn tb2" href="#section2"></a>
+                <a class="topbtn tb3" href="#section3"></a>
+                <a class="topbtn tb4" href="#section4"></a>
+                <a class="topbtn tb5" href="#section5"></a>
+                <a class="topbtn tb6" href="#section6"></a>
+               
+            </div>
+
+            <!-- Mute button -->
+            <sl-icon class="muted" name="volume-mute" style="font-size: 25px; position: absolute; top: 10px; right: 200px;"></sl-icon>
+            <!-- Sound switch -->
+            <sl-tooltip content="Sound" trigger="hover">
+                <sl-switch class="sound-switch" style="position: absolute; right: 150px; top: 10px;" onclick="javascript:toggle(this);"></sl-switch>
+            </sl-tooltip>
+            <!-- Unmute button -->
+            <sl-icon class="unmuted" name="volume-up" style="font-size: 25px; position: absolute; top: 10px; right: 120px; color: lightgrey;"></sl-icon>
+            <!-- Buy Now presentation button -->
+            <a href="#section6" class="buynow" style="background-color: transparent; font-size: 20px; position: absolute; right: 20px; top: 10px; color: black; text-decoration: none;"> Buy Now </a>
+    </div>
+
+
+
+    <!-- DIALOG BOX PRESET -------------------------------------------------------------------------------------------------------- -->
+    <sl-dialog label="sectionName" class="info-dialog" style="position: relative; z-index: 998;">     
+        <!-- Sample body texts (Changes via javascipt per person) -->
+        <p></p>
+        <!-- Spacer -->
+        <!-- Close button -->
+    </sl-dialog>
+
+
+
+    <!-- BODY DOCUMENT & SECTIONS ------------------------------------------------------------------------------------------------ -->
+    <div id="fullpage">
+
+
+    <!-- SECTION ONE *********************************************************** -->
+        <div class="section s1" style="position:relative;">
+
+            <!-- Body of section ones elements to position them as a whole group and be clumped together. -->
+            <div class="centredelements" style="display: flex;">
+                
+                <!-- Image of the Google Home itself. -->
+                <img src="images/googlehome.png" class="googleHomeImg gh1">
+                
+                <!-- Another div to place the text and buttons adjacent to image of the Google Home. -->
+                <div class="collumnOne">
+                    <!-- Continuous use of the logo for branding reasons. -->
+                    <img src="images/googlelogo.png" class="googlelogo">
+                    <!-- Section Title -->
+                    <h2> The all new Google Home </h2>
+                    <!-- Section Sub-title -->
+                    <h3> Made by Google, for you!</h3>
+                    <!-- Spacer -->
+                    <div class="spacer"></div>
+                    <!-- Linked button to the next section -->
+                    <button class="button_outline s1b"> <a href="#section2" style="color:black; text-decoration: none; cursor: pointer;"> Click here to learn more! </a> </button> 
+                </div>
+            </div>
+
+            <!-- Additional side navigation buttons -->
+            <div class="nav-btn nav1">
+                <!-- Down Button -->
+                <button class="down" style="border-color: black; color: black;"> <a href="#section2" style="color:black; text-decoration: none; cursor: pointer;"> \/ </a> </button>
+            </div>
+        </div>
+
+
+
+
+    <!-- 
+    NOTE: 
+    Sections two to five are very similar in content and code comments so the following 
+    comments on section two relate to the immediate sections after up until section seven
+    (the last white section), as they are slightly different.
+    -->
+
+        <!-- SECTION Two: Reminders (RED) *********************************************************** -->
+        <div class="section s2" style="position:relative;">
+
+            <div class="sec2visuals" style="display: flex;">
+                <img src="images/imagetwo.png" class="redimg">
+                <img src="images/googlehome.png" class="googleHomeImg ghred">
+            </div>
+
+            <div class="sec2body">
+                <h2 style="color: white;"> Personalize your reminders </h2>
+                <h3 style="color: white;"> Create a greeting for Google. <br> It can reply with a specific set of <br>  commands, phrases and actions! </h3>
+                <div class="spacer"></div>
+                <button class="button_outline sec2btn secbtn" style="border-color: white;"> More Information </button>
+            </div>
+
+            <div class="nav-btn">
+                <button class="up"> <a href="#section1" style="height: 43px; width: 43px; color: white; text-decoration: none; cursor: pointer;"> /\ </a> </button>
+                <button class="down"> <a href="#section3" style="height: 53px; width: 53px; color:white; text-decoration: none; cursor: pointer;"> \/ </a> </button>
+            </div>
+        </div>
+
+    <!-- SECTION THREE: Fun & Relax (YELLOW) *********************************************************** -->
+        <div class="section s3" style="position:relative;">
+
+            <div class="sec3visuals" style="display: flex;">
+                <img src="images/imagethree.png" class="yellowimg">
+                <img src="images/googlehome.png" class="googleHomeImg ghyellow">
+            </div>
+
+            <div class="sec3body">
+                <h2 style="color: white;"> Have some fun and relax </h2>
+                <h3 style="color: white;"> Lay back on the couch and simply <br> ask Google to play your favourite <br> hits, or to play a game! </h3>
+                <div class="spacer"></div>
+                <button class="button_outline sec3btn secbtn" style="border-color: white;"> More Information </button>
+            </div>
+            
+            <div class="nav-btn">
+                <button class="up"> <a href="#section2" style="height: 43px; width: 43px; color: white; text-decoration: none; cursor: pointer;"> /\ </a> </button>
+                <button class="down"> <a href="#section4" style="height: 53px; width: 53px; color:white; text-decoration: none; cursor: pointer;"> \/ </a> </button>
+            </div>
+        </div>
+
+    <!-- SECTION FOUR: Broadcasting (BLUE) *********************************************************** -->
+            <div class="section s4" style="position:relative;">
+
+                <!-- Google Home image and the illustrations paired together for positioning -->
+                <div class="sec4visuals" style="display: flex;">
+                    <!-- Illustration first so the google home is layered above it. -->
+                    <img src="images/imageone.png" class="blueimg">
+                    <!-- Google Home image -->
+                    <img src="images/googlehome.png" class="googleHomeImg ghblue">
+                </div>
+    
+                <!-- Body text and buttons paired together to be in a collumn-->
+                <div class="sec4body">
+                    <!-- Title -->
+                    <h2 style="color: white;"> Simultaneously broadcast </h2>
+                    <!-- Subtitle -->
+                    <h3 style="color: white;"> Connect multiple Google products <br> together and have them broadcast <br> altogether at once. </h3>
+                    <!-- Space out the design -->
+                    <div class="spacer"></div>
+                    <!-- Button linked to javascript to bring up a dialog. Changes per section. -->
+                    <button class="button_outline sec4btn secbtn" style="border-color: white;"> More Information </button>
+                </div>
+    
+                <!-- Navigation buttons on the side. -->
+                <div class="nav-btn">
+                    <!-- Up -->
+                    <button class="up"> <a href="#section3" style="height: 43px; width: 43px; color:white; text-decoration: none; cursor: pointer;"> /\ </a> </button>
+                    <!-- Down -->
+                    <button class="down"> <a href="#section5" style="height: 53px; width: 53px; color:white; text-decoration: none; cursor: pointer;"> \/ </a> </button>
+                </div>
+            </div>
+
+    <!-- SECTION FIVE: Learn & Create (GREEN) *********************************************************** -->
+        <div class="section s5" style="position:relative;">
+
+            <div class="sec5visuals" style="display: flex;">
+                <img src="images/imagefour.png" class="greenimg">
+                <img src="images/googlehome.png" class="googleHomeImg ghgreen">
+            </div>
+
+            <div class="sec5body">
+                <h2 style="color: white;"> Learn, create and enjoy </h2>
+                <h3 style="color: white;"> Busy making a mess with your <br> hands? Just ask Google for the <br> recipe or instructions! </h3>
+                <div class="spacer"></div>
+                <button class="button_outline sec5btn secbtn" style="border-color: white;"> More Information </button>
+            </div>
+
+            <div class="nav-btn">
+                <button class="up"> <a href="#section4" style="height: 43px; width: 43px; color:white; text-decoration: none; cursor: pointer;"> /\ </a> </button>
+                <button class="down"> <a href="#section6" style="height: 53px; width: 53px; color:white; text-decoration: none; cursor: pointer;"> \/ </a> </button>
+            </div>
+        </div>
+
+
+    <!-- SECTION SIX: Buy Now *********************************************************** -->
+        <div class="section s6" style="position: relative;">
+
+            <div class="sec6visuals">
+                <img src="images/imagethree.png" class="siximg1">
+                <img src="images/imagefour.png" class="siximg2">
+            </div>
+            
+            <div class="sec6body" style="text-align: center;">
+                <img src="images/googleicon.png" class="googleiconsec6">
+                <h2> So, what do you think? </h2>
+                <h3> Lets make your life easier today.</h3>
+                <div class="spacer"></div>
+                <button class="button_outline footerbtn"> <a href="#section7" style="height: 45px; width: 110px; color:black; text-decoration: none; cursor: pointer;"> Gallery </a> </button>
+                <button class="button_outline footerbtn"> <a href="https://www.paypal.com/au/home" style="height: 45px; width: 110px; color:black; text-decoration: none; cursor: pointer;"> Buy Now </a> </button>
+                
+            </div>
+        </div>
+
+
+    <!-- SECTION SEVEN: Gallery (HIDDEN) *********************************************************** -->
+        <div class="section s7" style="position: relative; text-align: center;">
+
+            <div style="height: 30px;"></div>
+            <!-- Branding icon, potential to adapt to an SVG -->
+            <img src="images/googleicon.png" class="googleiconsec7">
+
+            <div class="gallery">
+
+                <!-- Spacer -->
+                <div class="spacer"></div>
+
+                <!-- Line one of the images (Top) -->
+                <div class="line-one">
+                    <!-- Border radius order = Top: left, right, Bottom: Right, Left. -->
+                    <img style="border-radius: 20px 0 0 0; width: 15%;" src="images/gallery/one.png">
+                    <img style="width: 15%;"  src="images/gallery/two.jpg">
+                    <img style="border-radius: 0 20px 0 0; width: 15%;" src="images/gallery/three.jpg">
+                </div>
+                
+                <!-- Line two of the images (Bottom) -->
+                <div class="line-two">
+                    <img style="border-radius: 0 0 0 20px; width: 15%;" src="images/gallery/four.png">
+                    <img style="width: 15%;" src="images/gallery/five.jpg">
+                    <img style="border-radius: 0 0 20px 0; width: 15%;" src="images/gallery/six.jpg">
+                </div>
+
+                <!--
+                    https://dribbble.com/shots/7906332-UWORLD-NEW-CHARACTERS
+                    https://dribbble.com/shots/14464084-Google-Cloud
+                    https://dribbble.com/shots/8560107-Google-Adsense-2019
+                    https://dribbble.com/shots/6325914-Google-Ad-Settings-illustrations
+                    https://dribbble.com/shots/14131718-GOOGLE-YETI-CAMPAIGN
+                    https://dribbble.com/shots/9834437-Illustration-created-for-Google-Cloud-Identity
+                -->
+
+                <!-- Spacer -->
+                <div class="spacer"></div>
+
+                <!-- Button to go back up a section. -->
+                <button class="button_outline footerbtn"> <a href="#section6" style="color:black; text-decoration: none; cursor: pointer;"> Go Back </a> </button>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+        
+        <!-- Shoelace icon library that is hosted online, as the icons have been used within this assignment. -->
+        <sl-icon-library name="my-icons"></sl-icon>    
+        <!-- GSAP animations CDN hosted script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <!-- GSAP scroll trigger CDN hosted script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>   
+        <!-- Fullpage JS CDN hosted script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+        <!-- My local Javascript file (put last to override stylying and to ensure the document doesnt crash. -->
+        <script src="main.js"></script>
+
+        
+</body>
+</html>
