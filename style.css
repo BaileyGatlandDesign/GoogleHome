@@ -1,0 +1,1033 @@
+*{
+    box-sizing: border-box;
+}
+
+/* setting the standard styling for the */
+body{
+    font-family: 'futuralight', sans-serif;
+    margin:0;
+}
+
+
+/* LOCAL FONT LINKS --------------------------------------------------------------------------------- */
+
+/* Linking a local font */
+@font-face {
+	font-family: 'futuralight';
+    src: url('fonts/futuralight.ttf');
+}
+/* Linking a local font */
+@font-face {
+	font-family: 'futura';
+    src: url('fonts/futuramedium.ttf');
+}
+
+
+
+/* Classes ------------------------------------------------------------------------------------------ */
+
+/* Section One */
+.s1{
+    background-image: radial-gradient(white 10%, #FDFDFD 15%, #EDEDED 60%);
+    background: cover;
+}
+
+/* Section two */
+.s2{
+    background-image: radial-gradient(circle, #DB4437, #953429);
+}
+
+/* Section THREE */
+.s3{
+    background-image: radial-gradient(circle, #F2B740, #B78A2E);
+    background: cover;
+}
+
+/* Section Four */
+.s4{
+    background-image: radial-gradient(circle, #4285F4, #3A65B7);
+}
+
+/* Section Five */
+.s5{
+    background-image: radial-gradient(circle, #58A55C, #3C743D);
+    background: cover;
+}
+
+/* Section Six */
+.s6{
+    background-image: radial-gradient(white 10%, #FDFDFD 15%, #EDEDED 60%);
+    background: cover;
+}
+
+/* Section Seven */
+.s7{
+    background-image: radial-gradient(white 10%, #FDFDFD 15%, #EDEDED 60%);
+    background: cover;
+}
+
+.topgoogle{
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.googleHomeImg{
+    height: 400px;
+}
+
+.gallery img{
+    transition-delay: 0.3s;
+    transition: all 0.2s ease;
+}
+
+.gallery img:hover{
+    transform: scale(1.15);
+    z-index: 999;
+    cursor: pointer;
+}
+
+.googlelogo{
+    height: 95px;
+    text-align: left;
+}
+
+/* SEC ONE /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+.gh1{
+    position: absolute;
+    top: 160px;
+    left: 390px;
+}
+
+.collumnOne{
+    position: absolute;
+    top: 200px;
+    left: 750px;
+}
+
+.spacer{
+    height: 50px;
+}
+
+.s1b{
+    height: 45px;
+    width: 210px;
+}
+
+/* SEC Two /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+.redimg{
+    height: 450px;
+    position: absolute;
+    top: 150px;
+    right: 530px;
+}
+
+.ghred{
+    position: absolute;
+    top: 220px;
+    right: 300px;
+}
+
+.sec2body{
+    text-align: right;
+    position: absolute;
+    top: 270px;
+    right: 730px;
+}
+
+/* SEC three /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+.yellowimg{
+    height: 250px;
+    position: absolute;
+    top: 250px;
+    right: 260px;
+    transform: rotate(-50deg);
+}
+
+.ghyellow{
+    position: absolute;
+    top: 220px;
+    right: 470px;
+}
+
+.sec3body{
+    text-align: right;
+    position: absolute;
+    top: 270px;
+    right: 810px;
+}
+
+/* SEC four /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+.blueimg{
+    height: 350px;
+    position: absolute;
+    top: 245px;
+    left: 390px;
+}
+
+.ghblue{
+    position: absolute;
+    top: 220px;
+    left: 250px;
+}
+
+.sec4body{
+    position: absolute;
+    top: 270px;
+    right: 270px;
+}
+
+.secbtn{
+    color: white;
+    height: 45px;
+    width: 210px;
+    border-color: white;
+    cursor: pointer;
+}
+
+/* SEC FIVE /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+.greenimg{
+    height: 350px;
+    position: absolute;
+    top: 250px;
+    left: 280px;
+}
+
+.ghgreen{
+    position: absolute;
+    top: 220px;
+    left: 470px;
+}
+
+.sec5body{
+    position: absolute;
+    top: 270px;
+    left: 800px;
+}
+
+
+
+
+/* SEC SIX /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+.siximg1{
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    width: 400px;
+}
+
+.siximg2{
+    position: absolute;
+    bottom: 0px;
+    right: 90px;
+    height: 350px;
+}
+
+.sec6body{
+    text-align: center;
+    position: relative;
+    top: 202.75px;
+}
+
+.sec6body{
+    position: absolute;
+    left: 40%;
+    top: 200px;
+}
+
+.googleiconsec6{
+    height: 100px;
+    text-align: left;
+}
+
+.footerbtn{
+    height: 45px;
+    width: 110px;
+    cursor: pointer;
+    margin: 7px;
+}
+
+
+
+
+/* SEC SEVEN /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+.googleiconsec7{
+    height: 80px;
+    text-align: left;
+}
+
+
+
+/* BUTTONS (Not all, some in section tags)--------------------------------------------------------------------------------- */ 
+.nav-btn{
+    position: absolute;
+    right: 30px;
+}
+
+.up{
+    height: 43px;
+    width: 43px;
+    color: white;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    font-size: 5px;
+    padding:5px;
+}
+
+.down{
+    height: 53px;
+    width: 53px;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+    padding:5px;
+}
+
+.button_outline,
+.dialog-close{
+    border: solid;
+    background-color: transparent;
+    border-color: black;
+    font-family: 'futuralight', sans-serif;
+    font-weight: 200;
+    border-width: 1px;
+    border-radius: 15px; 
+    font-size: 15px;
+}
+
+.button_invisible{
+    background-color: transparent;
+    border: none;
+    font-family: 'futuralight', sans-serif; 
+    font-weight: 200;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+}
+
+.button_outline:hover{
+    animation: buttonshake 0.5s;
+    animation-iteration-count: 2;
+}
+
+.topbtn{
+    height: 23px; 
+    width: 23px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    text-decoration: none; 
+    border-width: 1px;
+    border: none;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+    margin-left: 3px;
+    margin-right: 3px;
+    opacity: 50%;
+}
+
+.topbtn:hover{
+    opacity: 85%;
+    transform: scale(1.2);
+}
+
+.topbtn.is-active {
+    transform: scale(1.4);
+    opacity: 100%;
+}
+
+.topbtn:focus,
+.topbtn:active{
+    outline: none;
+    color: white;
+    text-decoration: none;
+}
+
+.down,
+.up,
+.left,
+.right{
+    border: solid;
+    background-color: transparent;
+    font-family: 'futuralight', sans-serif;
+    font-weight: 200;
+    border-width: 1px;
+    border-radius: 50px; 
+    font-size: 15px;
+}
+
+.up:hover{
+    animation: pulseup 0.5s;
+    animation-iteration-count: 3;
+}
+
+.down:hover{
+    animation: pulsedown 0.5s;
+    animation-iteration-count: 3;
+}
+
+.button_outline:focus,
+.button_invisible:focus,
+.dialog-close,
+.up,
+.down,
+.left,
+.right{
+    outline: none;
+}
+
+.right,
+.left{
+    height: 30px;
+    width: 30px;
+    border-color: black;
+    color: black;
+    position: relative;
+    top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.right:hover{
+    animation: pulseright 0.5s;
+    animation-iteration-count: 1.5;
+}
+
+.left:hover{
+    animation: pulseleft 0.5s;
+    animation-iteration-count: 1.5;
+}
+
+.tb1{
+    background-color: #4285F4;
+}
+
+.tb2{
+    background-color: #DB4437;
+}
+
+.tb3{
+    background-color: #F2B740;
+}
+
+.tb4{
+    background-color: #4285F4;
+}
+
+.tb5{
+    background-color: #58A55C;
+}
+
+.tb6{
+    background-color: #DB4437;
+}
+
+.dialogbtn{
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.dialog-spacer{
+    height: 60px;
+    position: absolute;
+}
+
+
+/* HREF --------------------------------------------------------------------------------------------- */
+
+/* unvisited link */
+a:link {
+    color: white;
+  }
+  
+/* visited link */
+a:visited {
+    color: white;
+  }
+  
+/* mouse over link */
+a:hover {
+    color: white;
+  }
+  
+/* selected link */
+a:active {
+    color: white;
+  }
+
+
+
+
+
+/* ID's ---------------------------------------------------------------------------------------------- */
+#top-bar{
+    height: 50px;
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    z-index: 999;
+}
+
+#lightbox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox img{
+    width: 60%;
+}
+
+
+
+
+/* TEXT ----------------------------------------------------------------------------------------------------- */
+h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'futura', sans-serif;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'futuralight', sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+
+
+/* KEYFRAME ANIMATIONS ------------------------------------------------------------------------------------- */
+
+@keyframes buttonshake{
+    0% {
+        transform: rotate(0deg) translateX(0px) scaleX(1);
+    }
+
+    25% {
+        transform: rotate(-7deg) translateX(-10px) scaleX(1.15);
+    }
+
+    50% {
+        transform: rotate(0deg) translateX(0px) scaleX(1);
+    }
+    75% {
+        transform: rotate(7deg) translateX(10px) scaleX(1.15);
+    }
+    100%{
+        transform: rotate(0deg) translateX(0px) scaleX(1);
+    }
+}
+
+@keyframes pulseup{
+    0% {
+        transform: translateY(0px) scaleX(1);
+    }
+
+    25% {
+        transform: translateY(-10px) scaleX(1.05);
+    }
+
+    50% {
+        transform: translateY(0px) scaleX(1);
+    }
+    75% {
+        transform: translateY(0px) scaleX(1.1);
+    }
+    100%{
+        transform: translateY(0px) scaleX(1);
+    }
+}
+
+@keyframes pulsedown{
+    0% {
+        transform: translateY(0px) scaleX(1);
+    }
+
+    25% {
+        transform: translateY(10px) scaleX(1.1);
+    }
+
+    50% {
+        transform: translateY(0px) scaleX(1);
+    }
+    75% {
+        transform: translateY(0px) scaleX(1.1);
+    }
+    100%{
+        transform: translateY(0px) scaleX(1);
+    }
+}
+
+@keyframes pulseright{
+    0% {
+        transform: translateX(0px) scaleX(1);
+    }
+
+    25% {
+        transform: translateX(10px) scaleX(1.1);
+    }
+
+    50% {
+        transform: translateX(0px) scaleX(1);
+    }
+    75% {
+        transform: translateX(0px) scaleX(1.1);
+    }
+    100%{
+        transform: translateX(0px) scaleX(1);
+    }
+}
+
+@keyframes pulseleft{
+    0% {
+        transform: translateX(0px) scaleX(1);
+    }
+
+    25% {
+        transform: translateX(-10px) scaleX(1.1);
+    }
+
+    50% {
+        transform: translateX(0px) scaleX(1);
+    }
+    75% {
+        transform: translateX(0px) scaleX(1.1);
+    }
+    100%{
+        transform: translateX(0px) scaleX(1);
+    }
+}
+
+/* ########################################################################################################## */
+/* ########################################################################################################## */
+/* ########################################################################################################## */
+/* MEDIA QUERIES ############################################################################################ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .googleHomeImg{
+        height: 180px;
+    }
+    
+    .googlelogo{
+        height: 35px;
+        text-align: left;
+    }
+    
+    .muted{
+        display: none;
+    }
+
+    .unmuted{
+        display: none;
+    }
+
+    .sound-switch{
+        display: none;
+    }
+
+    .buynow{
+        display: none;
+    }
+
+    /* SEC ONE /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+    
+    .nav1{
+        position: absolute;
+        top: 600px;
+        left: 165px;
+    }
+
+    .gh1{
+        position: absolute;
+        top: 100px;
+        left: 130px;
+    }
+    
+    .collumnOne{
+        text-align: center;
+        position: absolute;
+        top: 340px;
+        left: 80px;
+    }
+    
+    .spacer{
+        height: 10px;
+    }
+    
+    .s1b{
+        height: 35px;
+        width: 180px;
+    }
+    
+    /* SEC Two /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+    .redimg{
+        height: 250px;
+        position: absolute;
+        top: 150px;
+        right: 190px;
+    }
+    
+    .ghred{
+        position: absolute;
+        top: 230px;
+        right: 100px;
+    }
+    
+    .sec2body{
+        text-align: center;
+        position: absolute;
+        top: 420px;
+        right: 60px;
+    }
+    
+    /* SEC three /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+    .yellowimg{
+        height: 130px;
+        position: absolute;
+        top: 140px;
+        right: 20px;
+        transform: rotate(-40deg);
+    }
+    
+    .ghyellow{
+        position: absolute;
+        top: 230px;
+        right: 115px;
+    }
+    
+    .sec3body{
+        text-align: center;
+        position: absolute;
+        top: 420px;
+        right: 70px;
+    }
+    
+    /* SEC four /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+    .blueimg{
+        height: 110px;
+        position: absolute;
+        top: 140px;
+        right: 70px;
+    }
+    
+    .ghblue{
+        position: absolute;
+        top: 230px;
+        right: 115px;
+    }
+    
+    .sec4body{
+        text-align: center;
+        position: absolute;
+        top: 420px;
+        right: 70px;
+    }
+    
+    /* SEC FIVE /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+    .greenimg{
+        height: 180px;
+        position: absolute;
+        top: 250px;
+        left: 280px;
+    }
+    
+    .ghgreen{
+        position: absolute;
+        top: 130px;
+        right: 85px;
+        justify-content: ;
+    }
+    
+    .sec5body{
+        text-align: center;
+        position: absolute;
+        top: 420px;
+        right: 70px;
+    }
+    
+    
+    
+    
+    /* SEC SIX /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+    .siximg1{
+        display: none;
+    }
+    
+    .siximg2{
+        display: none;
+    }
+    
+    .sec6body{
+        text-align: center;
+        width: 200px;
+    }
+
+    
+    .googleiconsec6{
+        height: 100px;
+        text-align: center;
+    }
+    
+    .footerbtn{
+        height: 45px;
+        width: 110px;
+        cursor: pointer;
+        margin: 7px;
+    }
+    
+    
+    
+    
+    /* SEC SEVEN /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+    .googleiconsec7{
+        height: 80px;
+        text-align: left;
+    }
+    
+    
+    
+    /* BUTTONS (Not all, some in section tags)--------------------------------------------------------------------------------- */ 
+    .nav-btn{
+        position: absolute;
+        right: 123px;
+        top: 650px;
+    }
+    
+    .up{
+        height: 43px;
+        width: 43px;
+        color: white;
+        border-color: white;
+        color: white;
+        cursor: pointer;
+        font-size: 5px;
+        padding:5px;
+    }
+    
+    .down{
+        height: 53px;
+        width: 53px;
+        border-color: white;
+        color: white;
+        cursor: pointer;
+        font-size: 10px;
+        padding:5px;
+    }
+    
+    .button_outline,
+    .dialog-close{
+        border: solid;
+        background-color: transparent;
+        border-color: black;
+        font-family: 'futuralight', sans-serif;
+        font-weight: 200;
+        border-width: 1px;
+        border-radius: 15px; 
+        font-size: 13px;
+    }
+    
+    .button_invisible{
+        background-color: transparent;
+        border: none;
+        font-family: 'futuralight', sans-serif; 
+        font-weight: 200;
+        font-size: 20px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: white;
+    }
+    
+    .button_outline:hover{
+        animation: buttonshake 0.5s;
+        animation-iteration-count: 2;
+    }
+    
+    .topbtn{
+        height: 23px; 
+        width: 23px; 
+        border-radius: 50%; 
+        cursor: pointer; 
+        text-decoration: none; 
+        border-width: 1px;
+        border: none;
+        display: inline-block;
+        transition: all 0.3s ease-out;
+        margin-left: 3px;
+        margin-right: 3px;
+        opacity: 50%;
+        
+    }
+    
+    .topbtn:hover{
+        opacity: 85%;
+        transform: scale(1.2);
+    }
+    
+    .topbtn.is-active {
+        transform: scale(1.4);
+        opacity: 100%;
+    }
+    
+    .topbtn:focus,
+    .topbtn:active{
+        outline: none;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .down,
+    .up,
+    .left,
+    .right{
+        border: solid;
+        background-color: transparent;
+        font-family: 'futuralight', sans-serif;
+        font-weight: 200;
+        border-width: 1px;
+        border-radius: 50px; 
+        font-size: 15px;
+    }
+    
+    .up:hover{
+        animation: pulseup 0.5s;
+        animation-iteration-count: 3;
+    }
+    
+    .down:hover{
+        animation: pulsedown 0.5s;
+        animation-iteration-count: 3;
+    }
+    
+    .button_outline:focus,
+    .button_invisible:focus,
+    .dialog-close,
+    .up,
+    .down,
+    .left,
+    .right{
+        outline: none;
+    }
+    
+    .right,
+    .left{
+        height: 30px;
+        width: 30px;
+        border-color: black;
+        color: black;
+        position: relative;
+        top: 120px;
+        margin-left: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    
+    .right:hover{
+        animation: pulseright 0.5s;
+        animation-iteration-count: 1.5;
+    }
+    
+    .left:hover{
+        animation: pulseleft 0.5s;
+        animation-iteration-count: 1.5;
+    }
+    
+    .dialogbtn{
+        height: 30px;
+        width: 60px;
+        cursor: pointer;
+        margin: 7px;
+    }
+    
+    .dialog-spacer{
+        height: 60px;
+        position: absolute;
+    }
+
+    .topgoogle{
+        height: 70%;
+        position: absolute;
+        top: 8px;
+        left: 17px;
+    }
+    
+    /* ID's ---------------------------------------------------------------------------------------------- */
+    #top-bar{
+        height: 50px;
+        background-color: white;
+        width: 100%;
+        top: 0px;
+        position: absolute;
+        z-index: 999;
+    }
+    
+    #lightbox {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.6);
+        z-index: 998;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #lightbox img{
+        width: 60%;
+    }
+    
+    
+    
+    
+    /* TEXT ----------------------------------------------------------------------------------------------------- */
+    h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    h2{
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'futura', sans-serif;
+    }
+    
+    h3{
+        font-size: 15px;
+        font-weight: 200;
+        font-family: 'futuralight', sans-serif;
+    }
+    
+    p{
+        margin: 0;
+    }
+
+    
+}
